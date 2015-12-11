@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+
 	<!-- set utf8, force renderer for ie, csrf uniq token -->
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="csrf-param" content="_csrf">
-	<meta name="csrf-token" content="by1FSXJxWjMgXzwiIzIRSltDEn46MmkHN3UzAhYjN11ZZx8cMCkXfA==">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="csrf-param" content="_csrf" />
+	<meta name="csrf-token" content="by1FSXJxWjMgXzwiIzIRSltDEn46MmkHN3UzAhYjN11ZZx8cMCkXfA==" />
 
-	<!-- add description of the website + fb/twitter opengrapf // TODO -->
+	<!-- add description of the website -->
 	<title>Voľby zo zahraničia</title>
-	<meta name="description" content="Voľby zo zahraničia" />
-	<link href="assets/css/select2.min.css" rel="stylesheet">
-	<link href="css/site.css" rel="stylesheet">
+	<meta name="description" content="Pripravte si žiadosť cez telefón a bez čítačky. Stačí Vám adresa a rodné číslo." />
+	<link href="assets/css/select2.min.css" rel="stylesheet" />
+	<link href="css/site.css" rel="stylesheet" />
 
-	<!-- only for the sake of knowing the number of the uniq visitors -->
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-71291615-1', 'auto');
-  ga('send', 'pageview');
-	</script>
+	<!-- open graph specification if anyone shares -->
+	<meta property="og:title" content="Voľby zo zahraničia" />
+	<meta property="og:image" content="https://volby.digital/images/logo.png" />
+	<meta property="og:description" content="Pripravte si žiadosť cez telefón a bez čítačky. Stačí Vám adresa a rodné číslo.."/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://volby.digital/"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:url" content="https://volby.digital/"/>
+	<meta name="twitter:image" content="https://volby.digital/images/logo.png"/>
+	<meta name="twitter:title" content="Voľby zo zahraničia" />
+	<meta name="twitter:description" content="Pripravte si žiadosť cez telefón a bez čítačky. Stačí Vám adresa a rodné číslo.."/>
+
+
 </head>
 <body>
 
@@ -47,18 +52,21 @@
 			<div class="site-index">
 				<div id="intro" class="row">
 					<h1><a href="#"><img src="images/logo.png" title="volby.digital"></a></h1>
-					<h2><strong class="digitalRed">98%</strong> ľudí zo zahraničia nevolilo, pretože sa nestihli zaregistrovať v&nbsp;termíne 50 dní pred poslednými parlamentnými voľbami.</h2>
+					<h2>V posledných parlamentných voľbách nevolilo až <strong class="digitalRed">98%</strong> ľudí zo zahraničia..</h2>
 					<h3>Pripravte si žiadosť cez telefón, bez tlačenia, scanovania, či špeciálnej čítačky na&nbsp;občiansky preukaz.
 					Stačí Vám na to adresa, rodné číslo a prípadne Váš pas.</h3>
 					<a class="btn btn-lg btn-success btn-step digitalBlueFill" href="#zahranicie" role="button"><strong>Pripraviť žiadosť</strong></a>
 					<ul>
 					  <li>Vytvorenie trvá približne <strong>3 minúty</strong></li>
-					  <li>Žiadosť je generovaná na <strong>vašom zariadení</strong></li>
+					  <li>Žiadosť je generovaná vo <strong>Vašom prehliadači</strong></li>
 					  <li>Žiadne <strong>osobné dáta nie sú prenášané internetom</strong></li>
-					  <li>Žiadosť odosielate z Vášho e-mailu</li>
+					  <li>Žiadosť odosielate z <strong>Vášho</strong> e-mailu</li>
 					</ul>
 					<!-- Sem dorobime Social buttonky -->
-					<h4>Tento nástroj na jednoduchú prípravu žiadostí Vám prináša <a href="//slovensko.digital/"><span>slovensko.digital</span></a></h4>
+					<h4>
+						Tento nástroj na jednoduchú prípravu žiadostí Vám prináša
+						<a target="_blank" href="//slovensko.digital/"><span>slovensko.digital</span></a>
+					</h4>
 
 					<div id="github" class="formatted">
 						<br/> Dostupné sú aj <a target="_blank" href="https://github.com/marsher/volby-zo-zahranicia">zdrojové kódy</a>
@@ -290,8 +298,8 @@
 <script src="assets/e560cfe3/yii.js"></script>
 <script src="assets/e560cfe3/yii.validation.js"></script>
 <script src="assets/e560cfe3/yii.activeForm.js"></script>
-<script src="js/site.js"></script>
 <script src="js/cities.js"></script>
+<script src="js/site.js"></script>
 <script src="assets/js/select2.min.js"></script>
 <script src="assets/js/pdfmake.min.js"></script>
 <script src="assets/js/vfs_fonts.js"></script>
@@ -322,5 +330,8 @@ $(document).ready(function(){
 	$(".section").css("min-height",$( window ).height());
 });
 </script>
+
+<!-- only for the sake of knowing the number of the uniq visitors -->
+<script src="js/ga.js"></script>
 </body>
 </html>
